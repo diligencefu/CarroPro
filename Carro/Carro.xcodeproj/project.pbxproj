@@ -27,6 +27,9 @@
 		049DB4042578CFB7004408EF /* LResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4032578CFB7004408EF /* LResponseModel.swift */; };
 		049DB4092578CFD7004408EF /* LNCarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4082578CFD7004408EF /* LNCarDetailViewController.swift */; };
 		049DB40E2578CFF0004408EF /* AppTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB40D2578CFF0004408EF /* AppTools.swift */; };
+		049DB4182578D651004408EF /* LNButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4152578D651004408EF /* LNButtonsView.swift */; };
+		049DB4192578D651004408EF /* LNComponentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4162578D651004408EF /* LNComponentViews.swift */; };
+		049DB41A2578D651004408EF /* LNFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4172578D651004408EF /* LNFormView.swift */; };
 		7C10345EF7409CA7F7B28533 /* Pods_Carro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F12DA5A3A66B6A1A685855 /* Pods_Carro.framework */; };
 		B880676CED7F842ABE605345 /* Pods_Carro_CarroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DA2A84837D3C4816C095AD /* Pods_Carro_CarroUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,9 @@
 		049DB4032578CFB7004408EF /* LResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LResponseModel.swift; sourceTree = "<group>"; };
 		049DB4082578CFD7004408EF /* LNCarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNCarDetailViewController.swift; sourceTree = "<group>"; };
 		049DB40D2578CFF0004408EF /* AppTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTools.swift; sourceTree = "<group>"; };
+		049DB4152578D651004408EF /* LNButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNButtonsView.swift; sourceTree = "<group>"; };
+		049DB4162578D651004408EF /* LNComponentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNComponentViews.swift; sourceTree = "<group>"; };
+		049DB4172578D651004408EF /* LNFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNFormView.swift; sourceTree = "<group>"; };
 		11F12DA5A3A66B6A1A685855 /* Pods_Carro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B9E41DA4EABE5602F6ABEA /* Pods-Carro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carro.release.xcconfig"; path = "Target Support Files/Pods-Carro/Pods-Carro.release.xcconfig"; sourceTree = "<group>"; };
 		2A4AEC48F76C3FBC6CE04460 /* Pods-CarroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarroTests.release.xcconfig"; path = "Target Support Files/Pods-CarroTests/Pods-CarroTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +267,9 @@
 		049DB4002578CF88004408EF /* views */ = {
 			isa = PBXGroup;
 			children = (
+				049DB4152578D651004408EF /* LNButtonsView.swift */,
+				049DB4162578D651004408EF /* LNComponentViews.swift */,
+				049DB4172578D651004408EF /* LNFormView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -548,12 +557,15 @@
 				049DB3632578CA82004408EF /* ViewController.swift in Sources */,
 				049DB4042578CFB7004408EF /* LResponseModel.swift in Sources */,
 				049DB3D12578CDFC004408EF /* LNBubbleViewController.swift in Sources */,
+				049DB41A2578D651004408EF /* LNFormView.swift in Sources */,
 				049DB40E2578CFF0004408EF /* AppTools.swift in Sources */,
 				049DB3DE2578CE1A004408EF /* LNDateTools.swift in Sources */,
+				049DB4182578D651004408EF /* LNButtonsView.swift in Sources */,
 				049DB3E42578CE22004408EF /* LNColorTools.swift in Sources */,
 				049DB3FC2578CF6F004408EF /* LNBaseModel.swift in Sources */,
 				049DB3FB2578CF6F004408EF /* LNBaseViewController.swift in Sources */,
 				049DB3D62578CE03004408EF /* Target.swift in Sources */,
+				049DB4192578D651004408EF /* LNComponentViews.swift in Sources */,
 				049DB3FA2578CF6F004408EF /* LNNavigationController.swift in Sources */,
 				049DB35F2578CA82004408EF /* AppDelegate.swift in Sources */,
 				049DB3DF2578CE1A004408EF /* LNButton.swift in Sources */,
