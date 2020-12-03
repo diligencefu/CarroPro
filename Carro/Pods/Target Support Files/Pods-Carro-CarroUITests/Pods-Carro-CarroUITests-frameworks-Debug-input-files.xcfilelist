@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Carro-CarroUITests/Pods-Carro-CarroUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
+${BUILT_PRODUCTS_DIR}/LNTools_fyh/LNTools_fyh.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/Toast/Toast.framework

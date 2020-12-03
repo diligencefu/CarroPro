@@ -1,0 +1,28 @@
+PODS:
+  - HandyJSON (5.0.2)
+  - LNTools_fyh/LNViewExtension (1.1.3):
+    - Toast
+  - SnapKit (5.0.1)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - HandyJSON
+  - LNTools_fyh/LNViewExtension
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - LNTools_fyh
+    - SnapKit
+    - Toast
+
+SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  LNTools_fyh: c17d0dd1344065b879535540efffdb60981e524d
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 7aba01f4880403479cf7e1f0bf097a8582f97cbe
+
+COCOAPODS: 1.10.0

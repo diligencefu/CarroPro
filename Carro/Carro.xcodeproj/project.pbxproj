@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037B1B9E3230DA87AEBF8EDC /* Pods_CarroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670CFB9A50F9B53999805057 /* Pods_CarroTests.framework */; };
 		049DB35F2578CA82004408EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB35E2578CA82004408EF /* AppDelegate.swift */; };
-		049DB3612578CA82004408EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3602578CA82004408EF /* SceneDelegate.swift */; };
 		049DB3632578CA82004408EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3622578CA82004408EF /* ViewController.swift */; };
-		049DB3662578CA82004408EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3642578CA82004408EF /* Main.storyboard */; };
-		049DB3682578CA84004408EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3672578CA84004408EF /* Assets.xcassets */; };
-		049DB36B2578CA84004408EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3692578CA84004408EF /* LaunchScreen.storyboard */; };
 		049DB3762578CA84004408EF /* CarroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3752578CA84004408EF /* CarroTests.swift */; };
 		049DB3812578CA84004408EF /* CarroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3802578CA84004408EF /* CarroUITests.swift */; };
+		049DB3B82578CD8E004408EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3B32578CD8E004408EF /* Assets.xcassets */; };
+		049DB3B92578CD8E004408EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3B42578CD8E004408EF /* LaunchScreen.storyboard */; };
+		049DB3BA2578CD8E004408EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3B62578CD8E004408EF /* Main.storyboard */; };
+		049DB3C42578CDE7004408EF /* resourceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3C32578CDE7004408EF /* resourceData.json */; };
+		049DB3D12578CDFC004408EF /* LNBubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3D02578CDFC004408EF /* LNBubbleViewController.swift */; };
+		049DB3D62578CE03004408EF /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3D52578CE03004408EF /* Target.swift */; };
+		049DB3DE2578CE1A004408EF /* LNDateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3DB2578CE1A004408EF /* LNDateTools.swift */; };
+		049DB3DF2578CE1A004408EF /* LNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3DD2578CE1A004408EF /* LNButton.swift */; };
+		049DB3E42578CE22004408EF /* LNColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3E32578CE22004408EF /* LNColorTools.swift */; };
+		7C10345EF7409CA7F7B28533 /* Pods_Carro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F12DA5A3A66B6A1A685855 /* Pods_Carro.framework */; };
+		B880676CED7F842ABE605345 /* Pods_Carro_CarroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DA2A84837D3C4816C095AD /* Pods_Carro_CarroUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +45,7 @@
 /* Begin PBXFileReference section */
 		049DB35B2578CA82004408EF /* Carro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049DB35E2578CA82004408EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		049DB3602578CA82004408EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		049DB3622578CA82004408EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		049DB3652578CA82004408EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		049DB3672578CA84004408EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		049DB36A2578CA84004408EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049DB36C2578CA84004408EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049DB3712578CA84004408EF /* CarroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049DB3752578CA84004408EF /* CarroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroTests.swift; sourceTree = "<group>"; };
@@ -49,6 +53,24 @@
 		049DB37C2578CA84004408EF /* CarroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049DB3802578CA84004408EF /* CarroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroUITests.swift; sourceTree = "<group>"; };
 		049DB3822578CA84004408EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049DB3B32578CD8E004408EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049DB3B52578CD8E004408EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		049DB3B72578CD8E004408EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		049DB3C32578CDE7004408EF /* resourceData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resourceData.json; sourceTree = "<group>"; };
+		049DB3D02578CDFC004408EF /* LNBubbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNBubbleViewController.swift; sourceTree = "<group>"; };
+		049DB3D52578CE03004408EF /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		049DB3DB2578CE1A004408EF /* LNDateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDateTools.swift; sourceTree = "<group>"; };
+		049DB3DD2578CE1A004408EF /* LNButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNButton.swift; sourceTree = "<group>"; };
+		049DB3E32578CE22004408EF /* LNColorTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNColorTools.swift; sourceTree = "<group>"; };
+		11F12DA5A3A66B6A1A685855 /* Pods_Carro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B9E41DA4EABE5602F6ABEA /* Pods-Carro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carro.release.xcconfig"; path = "Target Support Files/Pods-Carro/Pods-Carro.release.xcconfig"; sourceTree = "<group>"; };
+		2A4AEC48F76C3FBC6CE04460 /* Pods-CarroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarroTests.release.xcconfig"; path = "Target Support Files/Pods-CarroTests/Pods-CarroTests.release.xcconfig"; sourceTree = "<group>"; };
+		2ABB1FE7335FF5522DDC2D27 /* Pods-Carro-CarroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carro-CarroUITests.debug.xcconfig"; path = "Target Support Files/Pods-Carro-CarroUITests/Pods-Carro-CarroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DF2A119871C43E96B7DE1F2 /* Pods-Carro-CarroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carro-CarroUITests.release.xcconfig"; path = "Target Support Files/Pods-Carro-CarroUITests/Pods-Carro-CarroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F175D861005A1B57A007E33 /* Pods-CarroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarroTests.debug.xcconfig"; path = "Target Support Files/Pods-CarroTests/Pods-CarroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		670CFB9A50F9B53999805057 /* Pods_CarroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		906628AD0CD3A5B2AEF7E833 /* Pods-Carro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carro.debug.xcconfig"; path = "Target Support Files/Pods-Carro/Pods-Carro.debug.xcconfig"; sourceTree = "<group>"; };
+		E3DA2A84837D3C4816C095AD /* Pods_Carro_CarroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carro_CarroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C10345EF7409CA7F7B28533 /* Pods_Carro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037B1B9E3230DA87AEBF8EDC /* Pods_CarroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B880676CED7F842ABE605345 /* Pods_Carro_CarroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,8 @@
 				049DB3742578CA84004408EF /* CarroTests */,
 				049DB37F2578CA84004408EF /* CarroUITests */,
 				049DB35C2578CA82004408EF /* Products */,
+				714E3B81876B484A7B0BA783 /* Pods */,
+				21C8D4DAF43975150092B517 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +126,14 @@
 		049DB35D2578CA82004408EF /* Carro */ = {
 			isa = PBXGroup;
 			children = (
+				049DB3BE2578CDBA004408EF /* Pages */,
+				049DB3BF2578CDBF004408EF /* Base */,
+				049DB3C02578CDC4004408EF /* resource */,
+				049DB3C22578CDD0004408EF /* Tools */,
+				049DB3C12578CDC8004408EF /* Category */,
 				049DB35E2578CA82004408EF /* AppDelegate.swift */,
-				049DB3602578CA82004408EF /* SceneDelegate.swift */,
 				049DB3622578CA82004408EF /* ViewController.swift */,
-				049DB3642578CA82004408EF /* Main.storyboard */,
-				049DB3672578CA84004408EF /* Assets.xcassets */,
-				049DB3692578CA84004408EF /* LaunchScreen.storyboard */,
+				049DB3B22578CD8E004408EF /* Files */,
 				049DB36C2578CA84004408EF /* Info.plist */,
 			);
 			path = Carro;
@@ -128,6 +157,112 @@
 			path = CarroUITests;
 			sourceTree = "<group>";
 		};
+		049DB3B22578CD8E004408EF /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3B32578CD8E004408EF /* Assets.xcassets */,
+				049DB3B42578CD8E004408EF /* LaunchScreen.storyboard */,
+				049DB3B62578CD8E004408EF /* Main.storyboard */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		049DB3BE2578CDBA004408EF /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		049DB3BF2578CDBF004408EF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		049DB3C02578CDC4004408EF /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3C32578CDE7004408EF /* resourceData.json */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		049DB3C12578CDC8004408EF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3E82578CE24004408EF /* Color */,
+				049DB3DC2578CE1A004408EF /* Button */,
+				049DB3DA2578CE1A004408EF /* Date */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		049DB3C22578CDD0004408EF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3D52578CE03004408EF /* Target.swift */,
+				049DB3CF2578CDFC004408EF /* Bubble */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		049DB3CF2578CDFC004408EF /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3D02578CDFC004408EF /* LNBubbleViewController.swift */,
+			);
+			path = Bubble;
+			sourceTree = "<group>";
+		};
+		049DB3DA2578CE1A004408EF /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3DB2578CE1A004408EF /* LNDateTools.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		049DB3DC2578CE1A004408EF /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3DD2578CE1A004408EF /* LNButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		049DB3E82578CE24004408EF /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				049DB3E32578CE22004408EF /* LNColorTools.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		21C8D4DAF43975150092B517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11F12DA5A3A66B6A1A685855 /* Pods_Carro.framework */,
+				E3DA2A84837D3C4816C095AD /* Pods_Carro_CarroUITests.framework */,
+				670CFB9A50F9B53999805057 /* Pods_CarroTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		714E3B81876B484A7B0BA783 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				906628AD0CD3A5B2AEF7E833 /* Pods-Carro.debug.xcconfig */,
+				24B9E41DA4EABE5602F6ABEA /* Pods-Carro.release.xcconfig */,
+				2ABB1FE7335FF5522DDC2D27 /* Pods-Carro-CarroUITests.debug.xcconfig */,
+				4DF2A119871C43E96B7DE1F2 /* Pods-Carro-CarroUITests.release.xcconfig */,
+				4F175D861005A1B57A007E33 /* Pods-CarroTests.debug.xcconfig */,
+				2A4AEC48F76C3FBC6CE04460 /* Pods-CarroTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049DB3852578CA84004408EF /* Build configuration list for PBXNativeTarget "Carro" */;
 			buildPhases = (
+				4CC5289F072CEF0B82F7BC4A /* [CP] Check Pods Manifest.lock */,
 				049DB3572578CA82004408EF /* Sources */,
 				049DB3582578CA82004408EF /* Frameworks */,
 				049DB3592578CA82004408EF /* Resources */,
+				AB12699BBB0F300825BF6F7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049DB3882578CA84004408EF /* Build configuration list for PBXNativeTarget "CarroTests" */;
 			buildPhases = (
+				B4D2E097B8FB95C6C177243F /* [CP] Check Pods Manifest.lock */,
 				049DB36D2578CA84004408EF /* Sources */,
 				049DB36E2578CA84004408EF /* Frameworks */,
 				049DB36F2578CA84004408EF /* Resources */,
@@ -170,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049DB38B2578CA84004408EF /* Build configuration list for PBXNativeTarget "CarroUITests" */;
 			buildPhases = (
+				8282A503384CE67AEF5C0F5F /* [CP] Check Pods Manifest.lock */,
 				049DB3782578CA84004408EF /* Sources */,
 				049DB3792578CA84004408EF /* Frameworks */,
 				049DB37A2578CA84004408EF /* Resources */,
+				F125C88243546E41FB5B80F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +371,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049DB36B2578CA84004408EF /* LaunchScreen.storyboard in Resources */,
-				049DB3682578CA84004408EF /* Assets.xcassets in Resources */,
-				049DB3662578CA82004408EF /* Main.storyboard in Resources */,
+				049DB3BA2578CD8E004408EF /* Main.storyboard in Resources */,
+				049DB3B82578CD8E004408EF /* Assets.xcassets in Resources */,
+				049DB3B92578CD8E004408EF /* LaunchScreen.storyboard in Resources */,
+				049DB3C42578CDE7004408EF /* resourceData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +394,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CC5289F072CEF0B82F7BC4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8282A503384CE67AEF5C0F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carro-CarroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB12699BBB0F300825BF6F7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carro/Pods-Carro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carro/Pods-Carro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Carro/Pods-Carro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D2E097B8FB95C6C177243F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F125C88243546E41FB5B80F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carro-CarroUITests/Pods-Carro-CarroUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carro-CarroUITests/Pods-Carro-CarroUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Carro-CarroUITests/Pods-Carro-CarroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		049DB3572578CA82004408EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				049DB3632578CA82004408EF /* ViewController.swift in Sources */,
+				049DB3D12578CDFC004408EF /* LNBubbleViewController.swift in Sources */,
+				049DB3DE2578CE1A004408EF /* LNDateTools.swift in Sources */,
+				049DB3E42578CE22004408EF /* LNColorTools.swift in Sources */,
+				049DB3D62578CE03004408EF /* Target.swift in Sources */,
 				049DB35F2578CA82004408EF /* AppDelegate.swift in Sources */,
-				049DB3612578CA82004408EF /* SceneDelegate.swift in Sources */,
+				049DB3DF2578CE1A004408EF /* LNButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +544,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		049DB3642578CA82004408EF /* Main.storyboard */ = {
+		049DB3B42578CD8E004408EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				049DB3652578CA82004408EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		049DB3692578CA84004408EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				049DB36A2578CA84004408EF /* Base */,
+				049DB3B52578CD8E004408EF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		049DB3B62578CD8E004408EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049DB3B72578CD8E004408EF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +681,7 @@
 		};
 		049DB3862578CA84004408EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 906628AD0CD3A5B2AEF7E833 /* Pods-Carro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +701,7 @@
 		};
 		049DB3872578CA84004408EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B9E41DA4EABE5602F6ABEA /* Pods-Carro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +721,7 @@
 		};
 		049DB3892578CA84004408EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F175D861005A1B57A007E33 /* Pods-CarroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +744,7 @@
 		};
 		049DB38A2578CA84004408EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4AEC48F76C3FBC6CE04460 /* Pods-CarroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +767,7 @@
 		};
 		049DB38C2578CA84004408EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ABB1FE7335FF5522DDC2D27 /* Pods-Carro-CarroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +788,7 @@
 		};
 		049DB38D2578CA84004408EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF2A119871C43E96B7DE1F2 /* Pods-Carro-CarroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
