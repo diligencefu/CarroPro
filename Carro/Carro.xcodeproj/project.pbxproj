@@ -15,7 +15,7 @@
 		049DB3B82578CD8E004408EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3B32578CD8E004408EF /* Assets.xcassets */; };
 		049DB3B92578CD8E004408EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3B42578CD8E004408EF /* LaunchScreen.storyboard */; };
 		049DB3BA2578CD8E004408EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3B62578CD8E004408EF /* Main.storyboard */; };
-		049DB3C42578CDE7004408EF /* resourceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3C32578CDE7004408EF /* resourceData.json */; };
+		049DB3C42578CDE7004408EF /* resourceData0.json in Resources */ = {isa = PBXBuildFile; fileRef = 049DB3C32578CDE7004408EF /* resourceData0.json */; };
 		049DB3D12578CDFC004408EF /* LNBubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3D02578CDFC004408EF /* LNBubbleViewController.swift */; };
 		049DB3D62578CE03004408EF /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3D52578CE03004408EF /* Target.swift */; };
 		049DB3DE2578CE1A004408EF /* LNDateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB3DB2578CE1A004408EF /* LNDateTools.swift */; };
@@ -30,6 +30,8 @@
 		049DB4182578D651004408EF /* LNButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4152578D651004408EF /* LNButtonsView.swift */; };
 		049DB4192578D651004408EF /* LNComponentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4162578D651004408EF /* LNComponentViews.swift */; };
 		049DB41A2578D651004408EF /* LNFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB4172578D651004408EF /* LNFormView.swift */; };
+		049DB45E2578F723004408EF /* resourceData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 049DB45C2578F723004408EF /* resourceData2.json */; };
+		049DB45F2578F723004408EF /* resourceData1.json in Resources */ = {isa = PBXBuildFile; fileRef = 049DB45D2578F723004408EF /* resourceData1.json */; };
 		7C10345EF7409CA7F7B28533 /* Pods_Carro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F12DA5A3A66B6A1A685855 /* Pods_Carro.framework */; };
 		B880676CED7F842ABE605345 /* Pods_Carro_CarroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DA2A84837D3C4816C095AD /* Pods_Carro_CarroUITests.framework */; };
 /* End PBXBuildFile section */
@@ -65,7 +67,7 @@
 		049DB3B32578CD8E004408EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049DB3B52578CD8E004408EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049DB3B72578CD8E004408EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		049DB3C32578CDE7004408EF /* resourceData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resourceData.json; sourceTree = "<group>"; };
+		049DB3C32578CDE7004408EF /* resourceData0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resourceData0.json; sourceTree = "<group>"; };
 		049DB3D02578CDFC004408EF /* LNBubbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNBubbleViewController.swift; sourceTree = "<group>"; };
 		049DB3D52578CE03004408EF /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		049DB3DB2578CE1A004408EF /* LNDateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDateTools.swift; sourceTree = "<group>"; };
@@ -80,6 +82,8 @@
 		049DB4152578D651004408EF /* LNButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNButtonsView.swift; sourceTree = "<group>"; };
 		049DB4162578D651004408EF /* LNComponentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNComponentViews.swift; sourceTree = "<group>"; };
 		049DB4172578D651004408EF /* LNFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNFormView.swift; sourceTree = "<group>"; };
+		049DB45C2578F723004408EF /* resourceData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resourceData2.json; sourceTree = "<group>"; };
+		049DB45D2578F723004408EF /* resourceData1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resourceData1.json; sourceTree = "<group>"; };
 		11F12DA5A3A66B6A1A685855 /* Pods_Carro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B9E41DA4EABE5602F6ABEA /* Pods-Carro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carro.release.xcconfig"; path = "Target Support Files/Pods-Carro/Pods-Carro.release.xcconfig"; sourceTree = "<group>"; };
 		2A4AEC48F76C3FBC6CE04460 /* Pods-CarroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarroTests.release.xcconfig"; path = "Target Support Files/Pods-CarroTests/Pods-CarroTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +211,9 @@
 		049DB3C02578CDC4004408EF /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				049DB3C32578CDE7004408EF /* resourceData.json */,
+				049DB3C32578CDE7004408EF /* resourceData0.json */,
+				049DB45D2578F723004408EF /* resourceData1.json */,
+				049DB45C2578F723004408EF /* resourceData2.json */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -422,10 +428,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049DB45F2578F723004408EF /* resourceData1.json in Resources */,
 				049DB3BA2578CD8E004408EF /* Main.storyboard in Resources */,
 				049DB3B82578CD8E004408EF /* Assets.xcassets in Resources */,
 				049DB3B92578CD8E004408EF /* LaunchScreen.storyboard in Resources */,
-				049DB3C42578CDE7004408EF /* resourceData.json in Resources */,
+				049DB45E2578F723004408EF /* resourceData2.json in Resources */,
+				049DB3C42578CDE7004408EF /* resourceData0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

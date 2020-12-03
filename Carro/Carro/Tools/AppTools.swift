@@ -9,9 +9,9 @@ import UIKit
 
 class AppTools: NSObject {
     
-    static func jsonDataFromResource() -> [String:Any] {
+    static func jsonDataFromResource(_ suffix:String = "") -> [String:Any] {
         
-        guard let path = Bundle.main.path(forResource: "resourceData", ofType: "json"),
+        guard let path = Bundle.main.path(forResource: "resourceData"+suffix, ofType: "json"),
               let jsonString = try? String.init(contentsOfFile: path, encoding: .utf8) else {
             return [:]
         }

@@ -24,7 +24,7 @@ class Data: LNBaseModel {
     var end_time = TimeInterval()
     var next_billing_date = String()
     var mileage = String()
-    var total_outstanding_fine_count = Float()
+    var total_outstanding_fine_count = Int()
     var total_outstanding_fine_amount = Float()
     var earliest_payment_due_date = String()
     var total_per_km_rate = Float()

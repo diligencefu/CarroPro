@@ -7,6 +7,10 @@
 
 import XCTest
 
+@testable import Carro
+
+import KIF
+
 class CarroUITests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -39,4 +43,27 @@ class CarroUITests: XCTestCase {
             }
         }
     }
+    
+    func testDisplay() throws {
+        
+        let app = XCUIApplication()
+        let detail = app.navigationBars["Main"].buttons["Detail"]
+        detail.tap()
+        
+        app.buttons["Singapore"].tap()
+        app.scrollViews.children(matching: .other).element(boundBy: 1).swipeUp()
+        app.swipeDown()
+        
+        let backButton = app.navigationBars.children(matching: .button).element
+        backButton.tap()
+        
+        detail.tap()
+        
+        app.buttons["Thailand"].tap()
+        
+        app.swipeUp()
+        
+        backButton.tap()
+    }
+
 }

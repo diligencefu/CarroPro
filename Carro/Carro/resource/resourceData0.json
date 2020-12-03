@@ -53,18 +53,6 @@
                 "driving_license_number":"*****631Z",
                 "driving_license_registration_date":324727300
             },
-            {
-                "name":"Driver B",
-                "phone":"90685298",
-                "gender":"MALE",
-                "id_number":"*****631Z",
-                "driver_type":"MAIN_DRIVER",
-                "date_of_birth":324727300,
-                "marital_status":"MARRIED",
-                "driving_experience":"10",
-                "driving_license_number":"*****631Z",
-                "driving_license_registration_date":324727300
-            }
         ]
     },
     "success":{

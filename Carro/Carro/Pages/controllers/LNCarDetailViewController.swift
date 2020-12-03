@@ -13,7 +13,7 @@ class LNCarDetailViewController: LNBaseViewController {
     fileprivate var isSingapore = false
     
     lazy var resource: LResponseModel = {
-        let datas = AppTools.jsonDataFromResource()
+        let datas = AppTools.jsonDataFromResource("1")
         return LResponseModel.deserialize(from: datas) ?? LResponseModel()
     }()
     
@@ -36,11 +36,13 @@ class LNCarDetailViewController: LNBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.rightBarButtonItem = UIBarButtonItem.init(title: "Change", style: .plain, target: self, action: #selector(swiftData(sender:)))
+        
+        self.contentView.addSubview(self.scrollView)
     }
     
     override func configSubViews() {
-        
-        self.contentView.addSubview(self.scrollView)
         
         //This variable(kTop) is used to record the position y of the current view
         var kTop:CGFloat = 16
@@ -240,6 +242,27 @@ extension LNCarDetailViewController {
         WWZLDebugPrint(item: "Customize your insurance")
     }
     
+    @objc func bubbleAction(title:String, index:String) {
+        
+        let datas = AppTools.jsonDataFromResource(index)
+        self.resource = LResponseModel.deserialize(from: datas) ?? LResponseModel()
+                
+        _ = self.scrollView.subviews.map { (view) in
+            view.removeFromSuperview()
+        }
+        
+        self.configSubViews()
+    }
+
+    @objc func swiftData(sender: UIButton) {
+        LNBubbleViewController.init(lineHeight: 44,
+                                    titles: ["test data 1", "test data 2", "test data 3"],
+                                    target: Target.init(target: self,
+                                                        selector: #selector(bubbleAction(title:index:))),
+                                    sender: sender)
+                              .show()
+    }
+
     @objc func didChooseOption(index: String) {
         var titles = ["Get Help", "View Docs", "Payments", "Cancel Sub"]
         if !isSingapore {

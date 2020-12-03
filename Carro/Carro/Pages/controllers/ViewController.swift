@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
     
     
-    @objc func goToDetailPage(sender: UIButton) {
+    @objc func goToDetailPage(sender: NSObject) {
         
         LNBubbleViewController.init(lineHeight: 44,
                                     titles: ["Singapore", "Thailand"],

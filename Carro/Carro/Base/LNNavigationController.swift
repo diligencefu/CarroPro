@@ -13,7 +13,7 @@ class LNNavigationController: UINavigationController, UINavigationControllerDele
         super.viewDidLoad()
         self.delegate = self
         let navigationBar = UINavigationBar.appearance()
-        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17), NSAttributedString.Key.foregroundColor: UIColor.white.withAlphaComponent(0.95)]
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17), NSAttributedString.Key.foregroundColor: UIColor.black.withAlphaComponent(0.95)]
         self.navigationBar.tintColor = UIColor.white
     }
     
