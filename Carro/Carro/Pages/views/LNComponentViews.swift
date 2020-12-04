@@ -30,7 +30,7 @@ class LNCenterView: UIView {
         let number = UILabel.init()
         number.textAlignment = .center
         number.font = UIFont.systemFont(ofSize: 30, weight: .medium)
-        number.text = AppTools.conversionOfDigital(number: value)
+        number.text = AppTools.conversionOfDigital(value)
         number.textColor = UIColor.mainColor
         topView.addSubview(number)
         

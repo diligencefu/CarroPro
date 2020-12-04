@@ -9,8 +9,6 @@ import XCTest
 
 @testable import Carro
 
-import KIF
-
 class CarroUITests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -62,8 +60,6 @@ class CarroUITests: XCTestCase {
         app.buttons["Thailand"].tap()
         
         app.swipeUp()
-        
-        backButton.tap()
     }
 
 }

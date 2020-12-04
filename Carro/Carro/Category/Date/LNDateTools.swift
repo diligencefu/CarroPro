@@ -9,12 +9,12 @@ import UIKit
 
 //DateFormatter的创建会比较消耗性能，将默认的dateFormat写成单例减少不必要开支
 fileprivate class LNStaticDateFormatter {
-    static var `default` : DateFormatter {
+    static var `default` : DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         formatter.locale = .init(identifier: "Singapore")
         return formatter
-    }
+    }()
 }
 
 extension Date {

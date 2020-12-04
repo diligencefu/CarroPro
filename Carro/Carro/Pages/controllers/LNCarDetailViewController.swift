@@ -37,7 +37,7 @@ class LNCarDetailViewController: LNBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.rightBarButtonItem = UIBarButtonItem.init(title: "Change", style: .plain, target: self, action: #selector(swiftData(sender:)))
+        self.rightBarButtonItem = UIBarButtonItem.init(title: "Change", style: .plain, target: self, action: #selector(switchData(sender:)))
         
         self.contentView.addSubview(self.scrollView)
     }
@@ -137,11 +137,11 @@ class LNCarDetailViewController: LNBaseViewController {
         let model = resource.data
         
         //The display of the value needs to be processed first
-        let base_price = AppTools.conversionOfDigital(number: "\(model.base_price)")+" /month"
-        let road_tax = AppTools.conversionOfDigital(number:"\(model.road_tax)")
-        let total_per_km_rate = AppTools.conversionOfDigital(number: "\(model.total_per_km_rate)")+" /km"
+        let base_price = AppTools.conversionOfDigital("\(model.base_price)")+" /month"
+        let road_tax = AppTools.conversionOfDigital("\(model.road_tax)")
+        let total_per_km_rate = AppTools.conversionOfDigital("\(model.total_per_km_rate)")+" /km"
         let drivers = model.drivers
-        let insurance_excess = AppTools.conversionOfDigital(number:"\(model.insurance_excess)")
+        let insurance_excess = AppTools.conversionOfDigital("\(model.insurance_excess)")
         
         var formData = [["title":"Base Price", "value":base_price],
                         ["title":"Road Tax", "value":road_tax],
@@ -152,8 +152,8 @@ class LNCarDetailViewController: LNBaseViewController {
         if !isSingapore {
             formData.remove(at: 3)
             formData.remove(at: 2)
-            let total_outstanding_fine_count = AppTools.conversionOfDigital(number:"\(model.total_outstanding_fine_count)")
-            let total_outstanding_fine_amount = AppTools.conversionOfDigital(number:"\(model.total_outstanding_fine_amount)")
+            let total_outstanding_fine_count = AppTools.conversionOfDigital("\(model.total_outstanding_fine_count)")
+            let total_outstanding_fine_amount = AppTools.conversionOfDigital("\(model.total_outstanding_fine_amount)")
             formData.append(["title":"Total Fines", "value":total_outstanding_fine_count])
             formData.append(["title":"Total Fines Amount", "value":total_outstanding_fine_amount])
         }
@@ -254,9 +254,9 @@ extension LNCarDetailViewController {
         self.configSubViews()
     }
 
-    @objc func swiftData(sender: UIButton) {
+    @objc func switchData(sender: UIButton) {
         LNBubbleViewController.init(lineHeight: 44,
-                                    titles: ["test data 1", "test data 2", "test data 3"],
+                                    titles: ["test data 1", "test data 2"],
                                     target: Target.init(target: self,
                                                         selector: #selector(bubbleAction(title:index:))),
                                     sender: sender)

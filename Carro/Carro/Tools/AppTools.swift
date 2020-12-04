@@ -30,7 +30,7 @@ class AppTools: NSObject {
     }
 
     
-    static func conversionOfDigital(number: String) -> String {
+    static func conversionOfDigital(_ number: String) -> String {
                 
         let strings = number.components(separatedBy: ".")
         
