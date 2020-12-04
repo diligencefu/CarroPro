@@ -43,7 +43,7 @@ extension UIButton {
             labelEdge = UIEdgeInsets.init(top: -imageH-space/2.0, left:-imageW,  bottom: 0, right: 0)
         case .right:
             imageEdge = UIEdgeInsets.init(top: 0, left: labelW+space/2.0, bottom: 0, right: -labelW-space/2.0)
-            labelEdge = UIEdgeInsets.init(top: -imageW-space/2.0, left:-imageW,  bottom: 0, right: imageW+space/2.0)
+            labelEdge = UIEdgeInsets.init(top: 0, left: -imageW-space/2.0,  bottom: 0, right: imageW+space/2.0)
         }
         self.titleEdgeInsets = labelEdge
         self.imageEdgeInsets = imageEdge
