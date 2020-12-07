@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Carro
+
+  Created by MAC on 2020/12/7.
+  
+*/
+"CFBundleDisplayName" = "Carro";
+"CFBundleName" = "Carro";

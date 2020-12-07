@@ -178,7 +178,7 @@ class LNBubbleViewController: UIViewController {
             if let images = images {
                 if let string = images[index] as? String {
                     if string.hasPrefix("http") {
-                        //buttonItem.kf.setImage(with: URL.init(string: string), for: .normal, placeholder: UIImage.init(named: "placeholder_1"))
+                        //buttonItem.kf.setImage(with: string.url, for: .normal, placeholder: UIImage.init(named: "placeholder_1"))
                     }else{
                         buttonItem.setImage(UIImage.init(named: string), for: .normal)
                     }

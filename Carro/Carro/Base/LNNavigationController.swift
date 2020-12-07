@@ -27,7 +27,8 @@ class LNNavigationController: UINavigationController, UINavigationControllerDele
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         var isHidden = false
-        if viewController.isKind(of: LNCarDetailViewController.self) {
+        if viewController.isKind(of: LNCarDetailViewController.self)
+        {
             isHidden = true
         }
         self.setNavigationBarHidden(isHidden, animated: true)

@@ -9,17 +9,25 @@ import UIKit
 
 class LNFormView: UIView {
     
-    private var datas = [[String:Any]]()
+    public var datas = [[String:Any]]() {
+        didSet {
+            configSubviews()
+        }
+    }
     
-    init(frame:CGRect, datas:[[String:Any]]) {
+    init(frame:CGRect, datas:[[String:Any]]? = nil) {
         super.init(frame: frame)
-        
-        self.datas = datas
-        configSubviews()
+        if let datas = datas {
+            self.datas = datas
+        }
     }
     
     
     private func configSubviews() {
+        
+        _ = self.subviews.map { (view) in
+            view.removeFromSuperview()
+        }
         
         let kHeight:CGFloat = 20
         let kSpace:CGFloat = 16

@@ -7,13 +7,7 @@
 
 import UIKit
 
-class LResponseModel: LNBaseModel {
-    
-    var data = Data()
-    var success = Success()
-}
-
-class Data: LNBaseModel {
+class LNCarInfoModel: LNBaseModel {
     var id = 0
     var type = String()
     var make = String()
@@ -40,6 +34,14 @@ class Data: LNBaseModel {
     var records = [Record]()
     var help = [Help]()
     var drivers = [Driver]()
+    
+    var isSingapore = false
+    
+    //ROWHEIGHT
+    var carInfoHeight:CGFloat = 0
+    var carFormHeight:CGFloat = 0
+    var managerHeight:CGFloat = 0
+    var EnhanceHeight:CGFloat = 0
 }
 
 class Record: LNBaseModel {
@@ -55,9 +57,4 @@ class Help: LNBaseModel {
 
 class Driver: LNBaseModel {
     var name = String()
-}
-
-class Success: LNBaseModel {
-    var message = String()
-
 }

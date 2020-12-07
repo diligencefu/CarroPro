@@ -8,8 +8,11 @@ target 'Carro' do
   # Pods for Carro
 
   pod 'LNTools_fyh/LNViewExtension'
+  pod 'LNTools_fyh/LNProgressHUD'
+  
   pod 'HandyJSON'
   pod 'SnapKit'
+  pod 'AFNetworking'
   
   target 'CarroTests' do
     inherit! :search_paths

@@ -38,7 +38,8 @@ class ViewController: UIViewController {
     
     @objc func bubbleAction(title:String, index:String) {
         
-        self.navigationController?.pushViewController(LNCarDetailViewController.init(isSingapore: index == "0"), animated: true)
+        let detailVc = LNCarDetailViewController.init(isSingapore: index == "0")
+        self.navigationController?.pushViewController(detailVc, animated: true)
     }
     
 }

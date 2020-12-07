@@ -9,17 +9,28 @@ import UIKit
 
 class LNButtonsView: UIView {
 
-    private var datas = [String]()
+    public var datas = [String]() {
+        didSet {
+            configSubviews()
+        }
+    }
+    
     private var target:Target?
-    init(frame:CGRect, datas:[String], target:Target) {
+    init(frame:CGRect, datas:[String]? = nil, target:Target) {
         super.init(frame: frame)
         
-        self.datas = datas
+        if let datas = datas {
+            self.datas = datas
+        }
+        
         self.target = target
-        configSubviews()
     }
     
     private func configSubviews() {
+        
+        _ = self.subviews.map { (view) in
+            view.removeFromSuperview()
+        }
         
         let kWdith:CGFloat = self.ln_height
         let kSpace = (self.ln_width-kWdith*CGFloat(self.datas.count))/CGFloat(self.datas.count-1)
@@ -47,9 +58,9 @@ class LNButtonsView: UIView {
     
     private func color(_ name:String) -> UIColor {
         switch name {
-        case "Get Help":
+        case "Get Help".localized():
             return UIColor.mainColor
-        case "Cancel Sub":
+        case "Cancel Sub".localized():
             return UIColor.init(red: 207, green: 96, blue: 94)
         default:
             return UIColor.init(red: 97, green: 126, blue: 194)

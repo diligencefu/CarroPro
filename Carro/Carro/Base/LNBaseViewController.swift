@@ -95,10 +95,14 @@ class LNBaseViewController: UIViewController {
         
         addNavigationItem()
         configSubViews()
+        requestData()
     }
     
     internal func configSubViews() {
         
     }
 
+    internal func requestData() {
+        
+    }
 }

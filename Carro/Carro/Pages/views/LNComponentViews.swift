@@ -13,11 +13,16 @@ class LNCenterView: UIView {
     private var isDistance = false
     private var value = String()
 
-    init(frame:CGRect, isDistance:Bool, value:String) {
+    private let number = UILabel.init()
+    
+    init(frame:CGRect, isDistance:Bool, value:String? = nil) {
         super.init(frame: frame)
         
         self.isDistance = isDistance
-        self.value = value
+        
+        if let value = value {
+            self.value = value
+        }
         
         configSubviews()
     }
@@ -27,7 +32,6 @@ class LNCenterView: UIView {
         let topView = UIView.init()
         self.addSubview(topView)
         
-        let number = UILabel.init()
         number.textAlignment = .center
         number.font = UIFont.systemFont(ofSize: 30, weight: .medium)
         number.text = AppTools.conversionOfDigital(value)
@@ -70,13 +74,17 @@ class LNCenterView: UIView {
         let descLabel = UILabel.init()
         descLabel.textAlignment = .center
         descLabel.font = UIFont.init(name: "Futura", size: 14)
-        descLabel.text = isDistance ? "Driven this month":"Usage due this month"
+        descLabel.text = isDistance ? "Driven this month".local:"Usage due this month".local
         topView.addSubview(descLabel)
         
         descLabel.snp.makeConstraints { (ls) in
             ls.centerY.equalTo(topView).offset(36)
             ls.centerX.equalToSuperview()
         }
+    }
+    
+    public func setValue(_ value:String) {
+        number.text = value
     }
     
     
