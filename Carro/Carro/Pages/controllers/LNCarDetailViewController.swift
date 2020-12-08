@@ -91,18 +91,20 @@ extension LNCarDetailViewController:UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        var cell : LNCarCell!
+                
+        var identifier = ""
         switch indexPath.section {
         case 0:
-            cell = (tableView.dequeueReusableCell(withIdentifier: carInfoIdentifier, for: indexPath) as! LNCarCell)
+            identifier = carInfoIdentifier
         case 1:
-            cell = (tableView.dequeueReusableCell(withIdentifier: carFormIdentifier, for: indexPath) as! LNCarCell)
+            identifier = carFormIdentifier
         case 2:
-            cell = (tableView.dequeueReusableCell(withIdentifier: managerIdentifier, for: indexPath) as! LNCarCell)
+            identifier = managerIdentifier
         default:
-            cell = (tableView.dequeueReusableCell(withIdentifier: EnhanceIdentifier, for: indexPath) as! LNCarCell)
+            identifier = EnhanceIdentifier
         }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! LNCarCell
         cell.resource = self.resource
         cell.selectionStyle = .none
         return cell
@@ -128,8 +130,7 @@ extension LNCarDetailViewController:UITableViewDataSource,UITableViewDelegate {
         sectionView.backgroundColor = .white
         let sectionLabel = UILabel.init(frame: CGRect.init(x: 16, y: 0, width: UIScreen.width-16*2, height: 40))
         sectionLabel.text = (section == 2 ? "Manager your subscription":"Enhance your subscription").local
-        sectionLabel.font = UIFont.boldSystemFont(ofSize: 25)
-        sectionLabel.font = UIFont.init(name: "Verdana Bold", size: 20)
+        sectionLabel.font = UIFont.boldSystemFont(ofSize: 22)
         sectionLabel.textColor = UIColor.black
         sectionLabel.textAlignment = .center
         sectionView.addSubview(sectionLabel)

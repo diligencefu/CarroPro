@@ -39,7 +39,7 @@ class LNFormView: UIView {
         for index in 0..<datas.count {
             
             //I'm going to figure out where the content is, because it's height not going to be fixed
-            let valueView = UIView.init(frame: CGRect.init(x: kWidth/5*3, y: kTop, width: kWidth/5*2-kLeft, height: kHeight))
+            let valueView = UIView.init(frame: CGRect.init(x: kWidth/5*3, y: kTop, width: kWidth/5*2 - kLeft, height: kHeight))
             self.addSubview(valueView)
             
             //Get label
@@ -72,7 +72,7 @@ class LNFormView: UIView {
             //The reserved clearance
             kTop = valueView.ln_bottom + kSpace
 
-            let title = UILabel.init(frame: CGRect.init(x: kLeft, y: valueView.ln_y, width: kWidth/5*3-kLeft, height: valueView.ln_height))
+            let title = UILabel.init(frame: CGRect.init(x: kLeft, y: valueView.ln_y, width: kWidth/5*3 - kLeft, height: valueView.ln_height))
             title.font = UIFont.systemFont(ofSize: 16)
             if let titleText = datas[index]["title"] as? String {
                 title.text = titleText

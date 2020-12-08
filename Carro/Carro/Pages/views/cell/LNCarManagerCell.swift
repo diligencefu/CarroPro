@@ -37,9 +37,9 @@ class LNCarManagerCell: LNCarCell {
             //The distance between the two views above and below
             let kTopSpace:CGFloat = 12
             var kTop:CGFloat = kTopSpace
-            let kNormalWidth = UIScreen.width-kLeftSpace*2
+            let kNormalWidth = UIScreen.width - kLeftSpace*2
             
-            buttonsView.frame = CGRect.init(x: kLeftSpace*1.5, y: kTop, width: kNormalWidth-kLeftSpace, height: 80)
+            buttonsView.frame = CGRect.init(x: kLeftSpace*1.5, y: kTop, width: kNormalWidth - kLeftSpace, height: 80)
             buttonsView.datas = titles
             kTop = buttonsView.ln_bottom+kTopSpace
             
@@ -60,7 +60,7 @@ extension LNCarManagerCell {
             titles.remove(at: 1)
         }
         if let index = Int(index) {
-            WWZLDebugPrint(item: titles[index-100])
+            WWZLDebugPrint(item: titles[index - 100])
         }
     }
 }

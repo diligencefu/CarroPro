@@ -14,8 +14,7 @@ class LNCarInfoCell: LNCarCell {
     lazy var descLabel: UILabel = {
         let descLabel = UILabel.init()
         descLabel.text = "View all information about your subscription and get any help you require"
-        descLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.thin)
-        descLabel.font = UIFont.init(name: "Futura", size: 16)
+        descLabel.font = UIFont.boldSystemFont(ofSize: 16)
         descLabel.textColor = UIColor.textColor
         descLabel.numberOfLines = 0
         return descLabel
@@ -34,7 +33,7 @@ class LNCarInfoCell: LNCarCell {
         let carName = UILabel.init()
         //carName.text = resource.model
         carName.textColor = UIColor.textColor
-        carName.font = UIFont.init(name: "Kohinoor Bangla Semibold", size: 25)
+        carName.font = UIFont.boldSystemFont(ofSize: 25)
         carName.textAlignment = .center
         return carName
     }()
@@ -43,7 +42,7 @@ class LNCarInfoCell: LNCarCell {
         
         let carplate_number = UILabel.init()
         //carplate_number.text = resource.carplate_number
-        carplate_number.font = UIFont.init(name: "Kohinoor Devanagari", size: 16)
+        carplate_number.font = UIFont.systemFont(ofSize: 16)
         carplate_number.textColor = UIColor.black1
         carplate_number.textAlignment = .center
         return carplate_number
@@ -53,7 +52,7 @@ class LNCarInfoCell: LNCarCell {
     lazy var leftTime: UILabel = {
         
         let leftTime = UILabel.init()
-        leftTime.font = UIFont.init(name: "Futura", size: 15)
+        leftTime.font = UIFont.systemFont(ofSize: 15)
         leftTime.textColor = UIColor.textColor
         leftTime.textAlignment = .right
         return leftTime
@@ -83,7 +82,7 @@ class LNCarInfoCell: LNCarCell {
     //Last updated
     lazy var lastUpdated: UILabel = {
         let lastUpdated = UILabel.init()
-        lastUpdated.font = UIFont.init(name: "Kohinoor Devanagari", size: 14)
+        lastUpdated.font = UIFont.systemFont(ofSize: 14)
         lastUpdated.textColor = UIColor.lightColor
         lastUpdated.textAlignment = .center
         return lastUpdated
@@ -125,12 +124,12 @@ class LNCarInfoCell: LNCarCell {
             //The distance between the two views above and below
             let kTopSpace:CGFloat = 12
             var kTop:CGFloat = kTopSpace
-            let kNormalWidth = UIScreen.width-kLeftSpace*2
+            let kNormalWidth = UIScreen.width - kLeftSpace*2
             
             self.descLabel.frame = CGRect.init(x: kLeftSpace, y: kTop, width: kNormalWidth, height: 0)
             self.descLabel.ln_height = AppTools.calculateRowHeight(descLabel)
             
-            kTop = self.descLabel.ln_bottom+kTopSpace
+            kTop = self.descLabel.ln_bottom + kTopSpace
             self.carImage.frame = CGRect.init(x: kLeftSpace, y: kTop, width: kNormalWidth, height: 120)
             
             //Pictures of cars
@@ -138,17 +137,18 @@ class LNCarInfoCell: LNCarCell {
             self.carName.frame = CGRect.init(x: kLeftSpace, y: kTop, width: kNormalWidth, height: 20)
             self.carName.text = resource.model
             
-            kTop = self.carName.ln_bottom+kTopSpace
+            kTop = self.carName.ln_bottom + kTopSpace
             self.carplate_number.frame = CGRect.init(x: kLeftSpace, y: kTop, width: kNormalWidth, height: 15)
             self.carplate_number.text = resource.carplate_number
 
             //left days
-            kTop = carplate_number.ln_bottom+kTopSpace
-            self.leftTime.frame = CGRect.init(x: kLeftSpace*2, y: kTop, width: kNormalWidth-kLeftSpace*2, height: 15)
+            kTop = carplate_number.ln_bottom + kTopSpace
+            let width = kNormalWidth - kLeftSpace*2
+            self.leftTime.frame = CGRect.init(x: kLeftSpace*2, y: kTop, width: width, height: 15)
             self.leftTime.text = (resource.days_left.count == 0 ? "0":resource.days_left) + " days left"
             
             //left progress
-            kTop = leftTime.ln_bottom+8
+            kTop = leftTime.ln_bottom + 8
             self.progressView.frame = CGRect.init(x: leftTime.ln_x, y: kTop, width: leftTime.ln_width, height: 20)
             let kTotal:Float = 30//Let's say the total value is 30
             if let leftDay = Float(resource.days_left) {
@@ -165,7 +165,7 @@ class LNCarInfoCell: LNCarCell {
             self.cRighttView.frame =  CGRect.init(x: leftTime.ln_right - leftTime.ln_width/2, y: kTop, width: leftTime.ln_width/2, height: cHeight)
             self.cRighttView.setValue("\(resource.usage_due_this_month)")
 
-            self.centerLine.frame = CGRect.init(x: cLeftView.ln_right, y: cLeftView.ln_y+16, width: 1, height: cHeight-16*2)
+            self.centerLine.frame = CGRect.init(x: cLeftView.ln_right, y: cLeftView.ln_y+16, width: 1, height: cHeight - 16*2)
             
             //Last updated
             kTop = cLeftView.ln_bottom

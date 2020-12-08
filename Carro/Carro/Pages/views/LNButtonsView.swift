@@ -33,10 +33,10 @@ class LNButtonsView: UIView {
         }
         
         let kWdith:CGFloat = self.ln_height
-        let kSpace = (self.ln_width-kWdith*CGFloat(self.datas.count))/CGFloat(self.datas.count-1)
+        let kSpace = (self.ln_width - kWdith*CGFloat(self.datas.count)) / CGFloat(self.datas.count - 1)
         
         for index in 0..<self.datas.count {
-            let button = UIButton.init(frame: CGRect.init(x: (kWdith+kSpace)*CGFloat(index), y: 0, width: kWdith, height: self.ln_height))
+            let button = UIButton.init(frame: CGRect.init(x: (kWdith + kSpace)*CGFloat(index), y: 0, width: kWdith, height: self.ln_height))
             button.setTitle(self.datas[index], for: .normal)
             button.setImage(UIImage.init(named: self.datas[index]), for: .normal)
             button.titleLabel?.font = UIFont.init(name: "Futura", size: 13)

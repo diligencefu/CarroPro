@@ -38,9 +38,9 @@ class LNCarFormCell: LNCarCell {
             guard let resource = resource else {return}
             
             //The display of the value needs to be processed first
-            let base_price = AppTools.conversionOfDigital("\(resource.base_price)")+" /month"
+            let base_price = AppTools.conversionOfDigital("\(resource.base_price)") + " /month"
             let road_tax = AppTools.conversionOfDigital("\(resource.road_tax)")
-            let total_per_km_rate = AppTools.conversionOfDigital("\(resource.total_per_km_rate)")+" /km"
+            let total_per_km_rate = AppTools.conversionOfDigital("\(resource.total_per_km_rate)") + " /km"
             let drivers = resource.drivers
             let insurance_excess = AppTools.conversionOfDigital("\(resource.insurance_excess)")
             
@@ -64,13 +64,14 @@ class LNCarFormCell: LNCarCell {
             //The distance between the two views above and below
             let kTopSpace:CGFloat = 12
             var kTop:CGFloat = kTopSpace
-            let kNormalWidth = UIScreen.width-kLeftSpace*2
+            let kNormalWidth = UIScreen.width - kLeftSpace*2
             formView.frame = CGRect.init(x: kLeftSpace, y: kTop, width: kNormalWidth, height: 10)
             formView.datas = formData
             
             kTop = formView.ln_bottom + kTopSpace
             if resource.isSingapore {
-                self.customizeButton.frame = CGRect.init(x: UIScreen.width/5, y: kTop, width: UIScreen.width/5*3, height: 46)
+                let width = UIScreen.width/5*3
+                self.customizeButton.frame = CGRect.init(x: UIScreen.width/5, y: kTop, width: width, height: 46)
                 kTop = customizeButton.ln_bottom + kTopSpace
             }
             resource.carFormHeight = kTop
