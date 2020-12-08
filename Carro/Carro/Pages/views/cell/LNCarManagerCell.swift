@@ -26,7 +26,7 @@ class LNCarManagerCell: LNCarCell {
         
         didSet {
             guard let resource = resource else {return}
-
+            
             //Manager your subscription,  options
             var titles = ["Get Help".local, "View Docs".local, "Payments".local, "Cancel Sub".local]
             if !resource.isSingapore {
@@ -39,7 +39,8 @@ class LNCarManagerCell: LNCarCell {
             var kTop:CGFloat = kTopSpace
             let kNormalWidth = UIScreen.width - kLeftSpace*2
             
-            buttonsView.frame = CGRect.init(x: kLeftSpace*1.5, y: kTop, width: kNormalWidth - kLeftSpace, height: 80)
+            let bHeight = 80 * UIScreen.width/414
+            buttonsView.frame = CGRect.init(x: kLeftSpace*1.5, y: kTop, width: kNormalWidth - kLeftSpace, height: bHeight)
             buttonsView.datas = titles
             kTop = buttonsView.ln_bottom+kTopSpace
             
