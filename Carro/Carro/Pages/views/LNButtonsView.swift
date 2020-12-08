@@ -39,7 +39,7 @@ class LNButtonsView: UIView {
             let button = UIButton.init(frame: CGRect.init(x: (kWdith + kSpace)*CGFloat(index), y: 0, width: kWdith, height: self.ln_height))
             button.setTitle(self.datas[index], for: .normal)
             button.setImage(UIImage.init(named: self.datas[index]), for: .normal)
-            button.titleLabel?.font = UIFont.init(name: "Futura", size: 13)
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 13)
             button.titleLabel?.adjustsFontSizeToFitWidth = true
             button.titleLabel?.minimumScaleFactor = 0.8
             button.setTitleColor(.white, for: .normal)

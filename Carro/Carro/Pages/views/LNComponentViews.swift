@@ -73,7 +73,7 @@ class LNCenterView: UIView {
         
         let descLabel = UILabel.init()
         descLabel.textAlignment = .center
-        descLabel.font = UIFont.init(name: "Futura", size: 14)
+        descLabel.font = UIFont.boldSystemFont(ofSize: 14)
         descLabel.text = isDistance ? "Driven this month".local:"Usage due this month".local
         topView.addSubview(descLabel)
         
